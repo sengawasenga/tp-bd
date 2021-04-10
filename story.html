@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TP Base de donnees | Historique</title>
+		<!-- les liens de style -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<!-- le lien de font-awesome -->
+		<script src="js/all.min.js"></script>
+	</head>
+	<body>
+		<!-- hey les mecs, vous allez bien? juste nous amuser un peu avec ce 
+      travail pratique de base de donnees, c'est votre pote Senga,
+      arretons de trop parler, commecons vite svp 😎 -->
+		<section id="story">
+			<div class="admin-wrapper">
+				<div class="filter">
+					<p>
+						Vous cherchez un stagiaire ou un professeur en particulier? Entrer son
+						nom.
+					</p>
+					<form action="">
+						<div class="mb-1">
+							<label for="prénom" class="form-label">Titre de la personne</label>
+							<select class="form-select" aria-label="Default select example">
+								<option selected>Stagiaire</option>
+								<option value="1">Professeur</option>
+							</select>
+						</div>
+						<div class="mb-0">
+							<input
+								type="text"
+								class="form-control"
+								placeholder="Nom de la personne"
+							/>
+						</div>
+						<button type="submit" class="btn btn-login">Rechercher</button>
+					</form>
+				</div>
+				<div class="story">
+					<table>
+						<tr>
+							<th>Nom du stagiaire</th>
+							<th>Type de stage</th>
+							<th>Matiere suivie</th>
+							<th>Date de debut</th>
+						</tr>
+						<tr>
+							<td>Marcelo Senga</td>
+							<td>Remise à niveau scientifique</td>
+							<td>Langage de Gestion</td>
+							<td>24/05/2020</td>
+						</tr>
+						<tr>
+							<td>Gift Bambi</td>
+							<td>Perfectionnement en anglais et lingala</td>
+							<td>Langage Scientifique</td>
+							<td>24/05/2020</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+
+		<!-- jQuery et les differents fichiers js -->
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
