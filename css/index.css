@@ -24,13 +24,71 @@ li {
 	list-style: none;
 }
 
+/* LES STYLES DE LA BARRE DE NAVIGATION */
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  background: rgba(0, 0, 0, .75);
+  backdrop-filter: blur(30px);
+  color: whitesmoke;
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.logo a {
+  color: whitesmoke;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.links a {
+  color: rgba(245, 245, 245, 0.7);
+  padding: 0 20px 0 0;
+  margin: 0 7px 0 0;
+  position: relative;
+  transition: .4s ease;
+}
+
+.links a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 1px;
+  background: whitesmoke;
+  transition: .4s ease;
+}
+
+.links a:hover {
+  color: whitesmoke;
+}
+
+.links a:hover::before {
+  width: 50%;
+}
+
 /* LOGIN STYLES */
 section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	padding: 1.5% 5%;
+	padding: 0 5%;
 	background: rgb(228, 228, 228);
 }
 
@@ -156,19 +214,27 @@ form label {
 }
 
 .add {
-	width: 50%;
+	width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .admin-box {
-	width: 100%;
+	width: 50%;
 	padding: 3%;
-	margin: 10px;
+	/* margin: 10px; */
 	border: none;
 	border-radius: 10px;
 	backdrop-filter: blur(20px);
 	position: relative;
 	transition: 0.4s;
 }
+
+.admin-box.right {
+  text-align: right!important;
+}
+
+.admin-box form
 
 .admin-box:hover {
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -189,7 +255,7 @@ form label {
 
 /* HISTORY STYLES */
 #story {
-	padding: 0;
+	padding: 4% 0 0 0;
 	background: center / cover url("../img/bg-1.jpg") fixed;
 }
 
